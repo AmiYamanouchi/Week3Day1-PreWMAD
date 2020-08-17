@@ -69,7 +69,7 @@ const printNumbersToX = function(x) {
 // log to the console the two strings given, added together, with a space in between
 
 const addStrings = function(x,y) {
-  console.log(x,y)
+  console.log(`${x} ${y}`);
 }
 
 
@@ -100,7 +100,9 @@ const fizzBuzz = function() {
 const paramFizzBuzz = function(x) {
 
   for(let i = 0; i <= x; i++) {
-    if (i % 3 === 0) {
+    if(i % 5 === 0 && i % 3 === 0){
+      console.log("FizzBuzz")
+    } else if (i % 3 === 0) {
       console.log("Fizz")
     } else if(i % 5 === 0){
       console.log("Buzz")
